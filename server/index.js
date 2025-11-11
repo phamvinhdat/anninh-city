@@ -281,7 +281,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-BnCtv8PC.js", "imports": ["/assets/chunk-UIGDSWPH-C_7xOnb1.js", "/assets/index-L2k8Hile.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/assets/root-BzR4PSOt.js", "imports": ["/assets/chunk-UIGDSWPH-C_7xOnb1.js", "/assets/index-L2k8Hile.js"], "css": ["/assets/root-CgCWpPwo.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/home-C-HXmB9-.js", "imports": ["/assets/chunk-UIGDSWPH-C_7xOnb1.js", "/assets/index-L2k8Hile.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-3f6fd55c.js", "version": "3f6fd55c", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/anninh-cityassets/entry.client-BnCtv8PC.js", "imports": ["/anninh-cityassets/chunk-UIGDSWPH-C_7xOnb1.js", "/anninh-cityassets/index-L2k8Hile.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/anninh-cityassets/root-BzR4PSOt.js", "imports": ["/anninh-cityassets/chunk-UIGDSWPH-C_7xOnb1.js", "/anninh-cityassets/index-L2k8Hile.js"], "css": ["/anninh-cityassets/root-CgCWpPwo.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/anninh-cityassets/home-C-HXmB9-.js", "imports": ["/anninh-cityassets/chunk-UIGDSWPH-C_7xOnb1.js", "/anninh-cityassets/index-L2k8Hile.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/anninh-cityassets/manifest-f578154a.js", "version": "f578154a", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "v8_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_subResourceIntegrity": false, "unstable_viteEnvironmentApi": false };
@@ -289,7 +289,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "/";
+const publicPath = "/anninh-city";
 const entry = { module: entryServer };
 const routes = {
   "root": {
