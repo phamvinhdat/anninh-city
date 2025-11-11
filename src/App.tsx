@@ -34,7 +34,7 @@ const { Header, Footer, Content } = Layout;
 
 const { Text, Title, Paragraph } = Typography;
 
-export const Welcome = () => {
+export const App = () => {
   return (
     <Layout
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
@@ -162,7 +162,7 @@ export const Welcome = () => {
                 GPKD: 0319232661 cấp ngày: 24/10/2025 bởi Sở Tài Chính TP.HCM
               </Space>
               <Space>
-                <FaMapLocationDot />
+                {FaMapLocationDot({})}
                 Địa chỉ: 38 Cộng Hoà, phường Tân Sơn Nhất, TP.HCM
               </Space>
               <Space>
