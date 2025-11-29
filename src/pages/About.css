@@ -1,0 +1,297 @@
+/* src/pages/About.css (CẬP NHẬT: Tăng kích thước và độ đậm cho nội dung "Vì Sao Chọn Chúng Tôi") */
+
+.about-page {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-heading-section {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.page-heading-section h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222;
+    margin: 0;
+}
+
+.about-main-content {
+    padding: 30px 0 50px 0; 
+    background-color: #fff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: flex-start; 
+}
+
+.about-centered-grid {
+    display: block; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.centered-column {
+    text-align: center; 
+}
+
+.section-title {
+    font-size: 30px; 
+    font-weight: 700;
+    color: #ff6600; 
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.services-benefits-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px; 
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.centered-benefits-grid {
+    max-width: 600px; 
+    margin: 0 auto 30px auto; 
+    text-align: left; 
+}
+
+.benefit-item {
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.bullet-icon {
+    color: #ff6600;
+    font-size: 20px;
+    margin-right: 8px;
+    line-height: 1;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center; 
+}
+
+.cta-primary-blue, .cta-secondary-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.cta-primary-blue {
+    background-color: #007bff; 
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.cta-primary-blue:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.cta-secondary-outline {
+    background-color: #fff;
+    color: #666;
+    border: 2px solid #ccc;
+}
+
+.cta-secondary-outline:hover {
+    background-color: #f8f8f8;
+    color: #333;
+    border-color: #999;
+}
+
+.about-image-column {
+    display: none; 
+}
+
+.why-choose-us-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-choose-us-section .section-title {
+    color: #222; 
+    margin-bottom: 25px;
+    font-size: 36px; 
+    font-weight: 800; 
+}
+
+.choose-us-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.new-value-proposition-grid {
+    max-width: 900px;
+    margin: 20px auto 50px auto; 
+    text-align: left;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-new-statement {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #222; 
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 15px;
+}
+
+.value-item {
+    margin-bottom: 30px; 
+}
+
+.value-title {
+    font-size: 24px; 
+    font-weight: 800; 
+    color: #ff6600; 
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.value-icon {
+    font-size: 28px; 
+    margin-right: 12px;
+}
+.value-content {
+    padding-left: 40px; 
+    line-height: 1.7;
+    font-size: 16px; 
+    color: #444; 
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr; 
+    }
+    .page-heading-section h1 {
+        font-size: 32px;
+    }
+    .benefits-grid {
+        grid-template-columns: 1fr; 
+    }
+    .about-cta-buttons {
+        flex-direction: column; 
+    }
+    .cta-primary-blue, .cta-secondary-outline {
+        width: 100%;
+    }
+    .new-value-proposition-grid {
+        padding: 20px;
+    }
+}
+
+.commitment-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.commitment-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.blue-title {
+    color: #007bff; 
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+.centered-title {
+    font-size: 36px; 
+    text-align: center; 
+    line-height: 1.2;
+    margin-bottom: 40px; 
+    margin-top: 0; 
+}
+
+.commitment-sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff6600; 
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.commitment-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.commitment-list li:before {
+    content: "•"; 
+    color: #007bff; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.commitment-image-column {
+    text-align: center;
+}
+
+.commitment-main-image {
+    width: 100%;
+    height: auto;
+    max-height: 650px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive cho phần Cam kết */
+@media (max-width: 900px) {
+    .commitment-grid {
+        grid-template-columns: 1fr; 
+    }
+    .blue-title {
+        text-align: center;
+    }
+}

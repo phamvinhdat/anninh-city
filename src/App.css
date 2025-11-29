@@ -1,59 +1,31 @@
-.layout-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* src/App.css */
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.header-style {
-  text-align: center;
-  color: #fff;
-  height: 64px;
-  font-size: 22px;
-  padding-inline: 48px;
-  line-height: 64px;
-  background-color: #cab34f;
+body {
+    background-color: #f0f0f0; 
+    background-image: none !important;
+    background-size: initial;
+    background-attachment: initial; 
+    background-position: initial;
+    background-repeat: initial;
+    min-height: 100vh; 
 }
 
-.content-container {
-  flex: 1;
+header, footer {
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 10; 
+    position: relative; 
 }
 
-.carousel-style {
-  max-width: 1500px;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-.typography-section {
-  margin: 12px;
-}
-
-.paragraph-style {
-  font-size: 18px;
-  margin: 12px;
-}
-
-.title-center {
-  text-align: center;
-}
-
-.centered-image {
-  max-width: 1000px;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.footer-style {
-  background-color: #cab34f;
-  color: #fff;
-}
-
-.footer-text {
-  color: #fff;
-}
-
-.footer-center {
-  text-align: center;
+.services-section, .about-detail, .projects-section {
+    background-color: #fff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 30px; 
 }
