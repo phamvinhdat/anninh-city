@@ -1,0 +1,71 @@
+/* src/components/ContactStrip.css */
+
+.contact-strip {
+    background-color: #0056b3; 
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.strip-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-strip h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-strip p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-strip-cta {
+    display: inline-block;
+    background-color: #ff6600; 
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-strip-cta:hover {
+    background-color: #e05c00;
+}
+
+/* Style cho Large CTA (Ở cuối trang) */
+.large-cta-section {
+    background-color: #333; 
+    padding: 60px 0;
+}
+
+.large-cta-section h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.large-cta-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.large-cta-button {
+    padding: 18px 40px;
+    font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-strip h2 {
+        font-size: 24px;
+    }
+    .large-cta-section h2 {
+        font-size: 32px;
+    }
+}

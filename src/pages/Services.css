@@ -1,0 +1,237 @@
+/* src/pages/Services.css */
+
+/* -------------------- Khung chung của trang -------------------- */
+.services-page {
+    padding: 0 0 80px;
+}
+
+.services-content-section {
+    padding-top: 40px;
+}
+
+.services-main-grid {
+    display: grid;
+    /* Chia làm 2 cột: Sidebar 30% và Content 70% */
+    grid-template-columns: 1fr 3fr; 
+    gap: 40px;
+    align-items: flex-start; /* Giữ sidebar và nội dung ở trên cùng */
+}
+
+/* Ẩn tiêu đề di động trên desktop */
+.services-grid-container .mobile-only {
+    display: none;
+}
+
+/* -------------------- Sidebar (Cột Trái) -------------------- */
+.services-sidebar {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f8f8; /* Màu nền nhẹ nhàng cho sidebar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 100px; /* Giữ sidebar cố định khi cuộn */
+}
+
+.sidebar-title {
+    font-size: 1.35rem;
+    color: var(--primary-color, #1e3a8a); /* Màu xanh đậm */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color, #f59e0b);
+    font-weight: 700;
+}
+
+/* --- Block Tìm kiếm --- */
+.search-block {
+    margin-bottom: 30px;
+}
+
+.search-input-group {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-button {
+    background-color: var(--secondary-color, #f59e0b);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #d97706; 
+}
+.cta-block-services {
+    margin-bottom: 0; 
+    padding: 20px;
+    background-color: #e0f2fe; 
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cta-title {
+    color: var(--primary-color, #1e3a8a);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: none;
+}
+
+.cta-block-services p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-cta-sidebar {
+    display: block;
+    background-color: var(--primary-color, #1e3a8a);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta-sidebar:hover {
+    background-color: #1c326e;
+}
+
+.btn-cta-secondary {
+    display: block;
+    color: var(--primary-color, #1e3a8a);
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid var(--primary-color, #1e3a8a);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-cta-secondary:hover {
+    background-color: white;
+}
+.services-grid-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    color: var(--primary-color, #1e3a8a);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    min-height: 40px; 
+}
+
+.card-link {
+    color: var(--secondary-color, #f59e0b);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.service-card:hover .card-link {
+    color: #d97706;
+}
+
+.no-results-message {
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #cc0000;
+    border: 1px dashed #f59e0b;
+    background-color: #fffbeb;
+    border-radius: 8px;
+}
+@media (max-width: 1200px) {
+    .services-grid-3x3 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 992px) {
+    .services-main-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    
+    .services-sidebar {
+        order: 2; 
+        position: static;
+        top: auto;
+    }
+
+    .services-grid-container {
+        order: 1; 
+    }
+    .services-grid-container .mobile-only {
+        display: block;
+        font-size: 1.8rem;
+        color: var(--primary-color, #1e3a8a);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .page-heading-section .desktop-only {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid-3x3 {
+        grid-template-columns: 1fr; 
+    }
+    .card-image {
+        height: 200px;
+    }
+}

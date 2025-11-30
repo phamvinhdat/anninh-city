@@ -1,0 +1,141 @@
+/* src/components/Header.css */
+
+.main-header {
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    height: 100px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: none; 
+}
+
+.desktop-menu {
+    display: flex;
+    gap: 80px; 
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px; 
+    font-weight: 900; 
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #ff6600; 
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hotline-button {
+    text-decoration: none;
+    background-color: #fff; 
+    color: #000; 
+    border: 2px solid #ff6600; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.hotline-button:hover {
+    background-color: #ff6600; 
+    color: #fff;
+}
+
+.cta-button {
+    display: none !important;
+}
+.hotline-contact {
+    display: none !important;
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-item-mobile {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.hotline-button-mobile {
+    margin: 10px 20px;
+    display: inline-block;
+    background-color: #ff6600; 
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .desktop-menu, .hotline-button {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+    
+    .header-container {
+        padding: 10px 20px; 
+    }
+}
+@media (min-width: 901px) {
+    .mobile-menu {
+        display: none;
+    }
+}

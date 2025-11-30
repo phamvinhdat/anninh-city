@@ -1,0 +1,102 @@
+/* src/components/AboutDetail.css */
+
+.about-detail-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.about-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-image-col {
+    flex: 1;
+    min-width: 45%;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    height: 450px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content-col {
+    flex: 1;
+    min-width: 45%;
+}
+
+.subtitle-tag {
+    color: #ff6600;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.about-content-col h2 {
+    font-size: 36px;
+    color: #0056b3;
+    margin: 10px 0 20px 0;
+}
+
+.about-content-col p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.feature-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.check-icon {
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.learn-more-button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #004494;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-grid {
+        flex-direction: column;
+    }
+    .about-image-col, .about-content-col {
+        min-width: 100%;
+    }
+}

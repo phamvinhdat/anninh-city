@@ -1,0 +1,91 @@
+/* src/components/Footer.css (Đã cập nhật) */
+
+.main-footer {
+    background-color: #222; 
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: #ff6600; 
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #ff6600;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.map-embed {
+    height: 100%; 
+}
+
+.google-map-iframe {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.google-map-iframe iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.footer-bottom {
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #888;
+}
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .quick-links ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
