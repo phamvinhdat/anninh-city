@@ -9,8 +9,8 @@ const blogDetailData = [
         title: "Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024", 
         slug: "tuyen-dung-bao-ve-an-ninh-hcm",
         category: "Tin Tức",
-        date: "2020-11-20",
-        image: "/images/blog-default.jpg", 
+        date: "2025-11-20",
+        image: "/images/TT1.png", 
         fullContent: `
             <p><strong>Công ty Bảo vệ An Ninh City</strong> tự hào là một trong những đơn vị dẫn đầu trong lĩnh vực cung cấp giải pháp an ninh toàn diện tại khu vực phía Nam. Với tốc độ phát triển không ngừng, chúng tôi thông báo mở đợt **tuyển dụng lớn** cho các vị trí nhân viên bảo vệ chuyên nghiệp tại TP.HCM. Đây không chỉ là một công việc, mà là cơ hội để bạn xây dựng sự nghiệp bền vững trong một môi trường làm việc đầy tính kỷ luật và nhân văn.</p>
             
@@ -85,8 +85,8 @@ const blogDetailData = [
         title: "5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam", 
         slug: "bi-quyet-chon-cong-ty-bao-ve",
         category: "Cẩm Nang",
-        date: "2020-11-15",
-        image: "/images/blog-default.jpg", 
+        date: "2025-11-15",
+        image: "/images/TT2.png",  
         fullContent: `
             <p>Trong bối cảnh an ninh ngày càng phức tạp, việc lựa chọn một **công ty bảo vệ uy tín** là quyết định chiến lược, ảnh hưởng trực tiếp đến sự an toàn tài sản, thông tin kinh doanh và sự ổn định hoạt động của doanh nghiệp. Một quyết định sai lầm có thể dẫn đến những rủi ro pháp lý và tổn thất tài chính không đáng có. Dưới đây là 5 bí quyết chi tiết được các chuyên gia hàng đầu của An Ninh City tổng hợp, giúp bạn đánh giá và đưa ra lựa chọn sáng suốt.</p>
 
@@ -138,8 +138,8 @@ const blogDetailData = [
         title: "Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO", 
         slug: "quy-trinh-an-ninh-icao",
         category: "Cẩm Nang",
-        date: "2020-11-10",
-        image: "/images/blog-default.jpg", 
+        date: "2025-11-10",
+        image: "/images/TT3.png", 
         fullContent: `
             <p>An ninh hàng không (Aviation Security) là lĩnh vực có tầm quan trọng đặc biệt, chi phối bởi các tiêu chuẩn và quy định nghiêm ngặt của Tổ chức Hàng không Dân dụng Quốc tế (ICAO). Mục tiêu tối thượng của quy trình này là ngăn chặn mọi hành vi can thiệp bất hợp pháp vào hoạt động hàng không dân dụng, đảm bảo an toàn tuyệt đối cho hành khách, phi hành đoàn và tài sản. Quy trình kiểm soát được thực hiện theo nhiều tầng bảo vệ, từ khu vực công cộng đến khu vực hạn chế.</p>
 
@@ -179,12 +179,12 @@ const blogDetailData = [
         `
     },
     { 
-        id: 5, 
+        id: 4, 
         title: "Trách nhiệm pháp lý của công ty bảo vệ và chủ đầu tư", 
         slug: "trach-nhien-phap-ly",
         category: "Cẩm Nang",
-        date: "2020-10-25",
-        image: "/images/blog-default.jpg", 
+        date: "2025-10-25",
+        image: "/images/TT4.png", 
         fullContent: `
             <p>Mối quan hệ hợp tác giữa **Công ty Bảo vệ** và **Chủ đầu tư (Khách hàng)** được thiết lập dựa trên hợp đồng dịch vụ và chịu sự điều chỉnh của pháp luật hiện hành. Việc xác định rõ ràng trách nhiệm pháp lý của mỗi bên là nền tảng để xây dựng lòng tin, đảm bảo chất lượng dịch vụ và có cơ sở giải quyết tranh chấp khi rủi ro xảy ra. Bài viết này sẽ phân tích chuyên sâu về nghĩa vụ và trách nhiệm pháp lý của từng bên.</p>
 
