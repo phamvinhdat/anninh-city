@@ -22,6 +22,7 @@
     width: auto;
     object-fit: contain;
 }
+
 .desktop-menu {
     display: flex;
     gap: 80px; 
@@ -41,11 +42,13 @@
 .nav-item:hover {
     color: #ff6600; 
 }
+
 .header-actions {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .hotline-button {
     text-decoration: none;
     background-color: #fff; 
@@ -62,6 +65,7 @@
     background-color: #ff6600; 
     color: #fff;
 }
+
 .mobile-hotline-visible {
     display: none; 
 }
@@ -103,8 +107,8 @@
     border-bottom: 1px solid #eee;
     font-weight: bold;
 }
+
 @media (max-width: 1200px) {
-    /* 1. Ẩn các thành phần Desktop */
     .desktop-menu, 
     .desktop-hotline-only { 
         display: none !important; 
@@ -132,10 +136,12 @@
         max-width: 100%; 
         text-align: center; 
     }
+    
     .menu-toggle {
         display: block; 
         flex-shrink: 0;
     }
+    
     .header-actions {
         display: flex; 
         flex-shrink: 0; 

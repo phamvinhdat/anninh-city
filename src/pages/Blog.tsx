@@ -14,7 +14,7 @@ const blogData = [
         image: "/images/TT1.png", 
         slug: "tuyen-dung-bao-ve-an-ninh-hcm",
         category: "Tin Tức",
-        date: "2020-11-20"
+        date: "2025-11-20"
     },
     { 
         id: 2, 
@@ -23,7 +23,7 @@ const blogData = [
         image: "/images/TT2.png", 
         slug: "bi-quyet-chon-cong-ty-bao-ve",
         category: "Cẩm Nang",
-        date: "2020-11-15"
+        date: "2025-11-15"
     },
     { 
         id: 3, 
@@ -32,7 +32,7 @@ const blogData = [
         image: "/images/TT3.png", 
         slug: "quy-trinh-an-ninh-icao",
         category: "Cẩm Nang",
-        date: "2020-11-10"
+        date: "2025-11-10"
     },
     { 
         id: 4, 
@@ -60,7 +60,8 @@ const blogData = [
         slug: "so-cuu-cho-bao-ve-truong-hoc",
         category: "Cẩm Nang",
         date: "2025-10-10"
-    },
+    }
+   
 ];
 
 const categories = [
