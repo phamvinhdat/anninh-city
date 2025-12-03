@@ -22,14 +22,11 @@
     width: auto;
     object-fit: contain;
 }
-
-.logo-text {
-    display: none; 
-}
-
 .desktop-menu {
     display: flex;
     gap: 80px; 
+    flex-grow: 1; 
+    justify-content: center; 
 }
 
 .nav-item {
@@ -44,13 +41,11 @@
 .nav-item:hover {
     color: #ff6600; 
 }
-
 .header-actions {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .hotline-button {
     text-decoration: none;
     background-color: #fff; 
@@ -67,12 +62,11 @@
     background-color: #ff6600; 
     color: #fff;
 }
-
-.cta-button {
-    display: none !important;
+.mobile-hotline-visible {
+    display: none; 
 }
-.hotline-contact {
-    display: none !important;
+.desktop-hotline-only {
+    display: block; 
 }
 
 .menu-toggle {
@@ -91,7 +85,6 @@
     margin: 4px 0;
     transition: 0.4s;
 }
-
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -103,39 +96,59 @@
 }
 
 .nav-item-mobile {
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     color: #333;
     display: block;
     border-bottom: 1px solid #eee;
-}
-
-.hotline-button-mobile {
-    margin: 10px 20px;
-    display: inline-block;
-    background-color: #ff6600; 
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
     font-weight: bold;
-    text-decoration: none;
 }
-
-@media (max-width: 900px) {
-    .desktop-menu, .hotline-button {
-        display: none; 
+@media (max-width: 1200px) {
+    /* 1. Ẩn các thành phần Desktop */
+    .desktop-menu, 
+    .desktop-hotline-only { 
+        display: none !important; 
     }
 
-    .menu-toggle {
-        display: block; 
+    .header-container {
+        padding: 5px 10px; 
+        justify-content: space-between; 
+        align-items: center;
+        gap: 10px; 
     }
     
-    .header-container {
-        padding: 10px 20px; 
+    .site-logo {
+        height: 50px; 
+        flex-shrink: 0; 
+    }
+    .mobile-hotline-visible {
+        display: block;
+        padding: 8px 12px;
+        font-size: 14px;
+        background-color: #ff6600; 
+        color: #fff;
+        border: none;
+        white-space: nowrap; 
+        max-width: 100%; 
+        text-align: center; 
+    }
+    .menu-toggle {
+        display: block; 
+        flex-shrink: 0;
+    }
+    .header-actions {
+        display: flex; 
+        flex-shrink: 0; 
+        gap: 0; 
     }
 }
-@media (min-width: 901px) {
-    .mobile-menu {
-        display: none;
+
+@media (min-width: 1201px) {
+    .mobile-hotline-visible,
+    .menu-toggle {
+        display: none !important;
+    }
+    .hotline-button.desktop-hotline-only {
+        display: block;
     }
 }
