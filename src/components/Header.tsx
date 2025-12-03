@@ -21,8 +21,6 @@ const Header = () => {
         setIsOpen(false);
       }
     };
-
-    // Gắn listener
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
