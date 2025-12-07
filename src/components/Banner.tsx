@@ -1,5 +1,5 @@
-import React from "react";
-import { Carousel, Card } from "antd";
+import React from 'react';
+import { Carousel, Card } from 'antd';
 
 export const Banner: React.FC = () => (
   <Carousel

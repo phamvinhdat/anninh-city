@@ -2,14 +2,14 @@ import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './BlogDetail.css';
 const blogDetailData = [
-    {
-        id: 1,
-        title: "Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024",
-        slug: "tuyen-dung-bao-ve-an-ninh-hcm",
-        category: "Tin Tức",
-        date: "20-11-2025",
-        image: "/images/TT1.png",
-        fullContent: `
+  {
+    id: 1,
+    title: 'Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024',
+    slug: 'tuyen-dung-bao-ve-an-ninh-hcm',
+    category: 'Tin Tức',
+    date: '20-11-2025',
+    image: '/images/TT1.png',
+    fullContent: `
             <p><strong>Công ty Bảo vệ An Ninh City</strong> tự hào là một trong những đơn vị dẫn đầu trong lĩnh vực cung cấp giải pháp an ninh toàn diện tại khu vực phía Nam. Với tốc độ phát triển không ngừng, chúng tôi thông báo mở đợt **tuyển dụng lớn** cho các vị trí nhân viên bảo vệ chuyên nghiệp tại TP.HCM. Đây không chỉ là một công việc, mà là cơ hội để bạn xây dựng sự nghiệp bền vững trong một môi trường làm việc đầy tính kỷ luật và nhân văn.</p>
             
             <p>Chúng tôi cam kết xây dựng một môi trường làm việc không chỉ chuyên nghiệp mà còn đề cao sự gắn kết, đào tạo liên tục và cơ hội phát triển nghề nghiệp lâu dài cho mọi nhân viên, đặc biệt là những cá nhân có tham vọng thăng tiến lên các vị trí quản lý.</p>
@@ -76,16 +76,16 @@ const blogDetailData = [
             </ul>
 
             <p><strong>Cơ hội của bạn đang ở đây!</strong> Hãy nộp hồ sơ ngay để không bỏ lỡ cơ hội làm việc tại An Ninh City, nơi sự chuyên nghiệp và cơ hội thăng tiến luôn song hành cùng bạn. Vui lòng liên hệ trực tiếp phòng Nhân sự của An Ninh City qua số điện thoại <strong>0909.7733.02</strong> hoặc nộp hồ sơ trực tiếp tại văn phòng công ty trong giờ hành chính.</p>
-        `
-    },
-    {
-        id: 2,
-        title: "5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam",
-        slug: "bi-quyet-chon-cong-ty-bao-ve",
-        category: "Cẩm Nang",
-        date: "15-11-2025",
-        image: "/images/TT2.png",
-        fullContent: `
+        `,
+  },
+  {
+    id: 2,
+    title: '5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam',
+    slug: 'bi-quyet-chon-cong-ty-bao-ve',
+    category: 'Cẩm Nang',
+    date: '15-11-2025',
+    image: '/images/TT2.png',
+    fullContent: `
             <p>Trong bối cảnh an ninh ngày càng phức tạp, việc lựa chọn một **công ty bảo vệ uy tín** là quyết định chiến lược, ảnh hưởng trực tiếp đến sự an toàn tài sản, thông tin kinh doanh và sự ổn định hoạt động của doanh nghiệp. Một quyết định sai lầm có thể dẫn đến những rủi ro pháp lý và tổn thất tài chính không đáng có. Dưới đây là 5 bí quyết chi tiết được các chuyên gia hàng đầu của An Ninh City tổng hợp, giúp bạn đánh giá và đưa ra lựa chọn sáng suốt.</p>
 
             <h2>1. Kiểm tra tính hợp pháp và Năng lực pháp lý</h2>
@@ -129,16 +129,16 @@ const blogDetailData = [
             </ul>
             
             <p>Việc áp dụng 5 bí quyết trên sẽ giúp doanh nghiệp của bạn chọn được đối tác bảo vệ không chỉ đáng tin cậy mà còn có năng lực vượt trội, đảm bảo môi trường kinh doanh an toàn tuyệt đối.</p>
-        `
-    },
-    {
-        id: 3,
-        title: "Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO",
-        slug: "quy-trinh-an-ninh-icao",
-        category: "Cẩm Nang",
-        date: "10-11-2025",
-        image: "/images/TT3.png",
-        fullContent: `
+        `,
+  },
+  {
+    id: 3,
+    title: 'Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO',
+    slug: 'quy-trinh-an-ninh-icao',
+    category: 'Cẩm Nang',
+    date: '10-11-2025',
+    image: '/images/TT3.png',
+    fullContent: `
             <p>An ninh hàng không (Aviation Security) là lĩnh vực có tầm quan trọng đặc biệt, chi phối bởi các tiêu chuẩn và quy định nghiêm ngặt của Tổ chức Hàng không Dân dụng Quốc tế (ICAO). Mục tiêu tối thượng của quy trình này là ngăn chặn mọi hành vi can thiệp bất hợp pháp vào hoạt động hàng không dân dụng, đảm bảo an toàn tuyệt đối cho hành khách, phi hành đoàn và tài sản. Quy trình kiểm soát được thực hiện theo nhiều tầng bảo vệ, từ khu vực công cộng đến khu vực hạn chế.</p>
 
             <h2>1. Kiểm soát an ninh khu vực nhà ga và sân bay</h2>
@@ -174,16 +174,16 @@ const blogDetailData = [
             </ul>
             
             <p>Tuân thủ tiêu chuẩn ICAO không chỉ là nghĩa vụ mà còn là bằng chứng về cam kết an toàn của quốc gia và các đơn vị hoạt động trong lĩnh vực hàng không.</p>
-        `
-    },
-    { 
-        id: 4, 
-        title: "Trách nhiệm pháp lý của công ty bảo vệ và chủ đầu tư", 
-        slug: "trach-nhien-phap-ly",
-        category: "Cẩm Nang",
-        date: "25-10-2025",
-        image: "/images/TT4.png",
-        fullContent: `
+        `,
+  },
+  {
+    id: 4,
+    title: 'Trách nhiệm pháp lý của công ty bảo vệ và chủ đầu tư',
+    slug: 'trach-nhien-phap-ly',
+    category: 'Cẩm Nang',
+    date: '25-10-2025',
+    image: '/images/TT4.png',
+    fullContent: `
             <p>Mối quan hệ hợp tác giữa **Công ty Bảo vệ** và **Chủ đầu tư (Khách hàng)** được thiết lập dựa trên hợp đồng dịch vụ và chịu sự điều chỉnh của pháp luật hiện hành. Việc xác định rõ ràng trách nhiệm pháp lý của mỗi bên là nền tảng để xây dựng lòng tin, đảm bảo chất lượng dịch vụ và có cơ sở giải quyết tranh chấp khi rủi ro xảy ra. Bài viết này sẽ phân tích chuyên sâu về nghĩa vụ và trách nhiệm pháp lý của từng bên.</p>
 
             <h2>1. Trách nhiệm pháp lý cốt lõi của Công ty Bảo vệ</h2>
@@ -221,90 +221,99 @@ const blogDetailData = [
             
             <h2>3. Giải quyết tranh chấp và chấm dứt hợp đồng</h2>
             <p>Hợp đồng phải quy định rõ cách thức giải quyết các bất đồng, ưu tiên hòa giải. Nếu không thể hòa giải, các bên có thể đưa vụ việc ra Tòa án kinh tế có thẩm quyền hoặc Trọng tài thương mại để giải quyết, đảm bảo tính thượng tôn pháp luật và quyền lợi của mỗi bên.</p>
-        `
-    },
+        `,
+  },
 ];
 
 const getPostBySlug = (slug: string | undefined) => {
-    return blogDetailData.find(post => post.slug === slug);
+  return blogDetailData.find((post) => post.slug === slug);
 };
 
-const RelatedPostsSidebar: React.FC<{ currentSlug: string }> = ({ currentSlug }) => {
-    const relatedPosts = blogDetailData
-        .filter(post => post.slug !== currentSlug)
-        .slice(0, 3);
+const RelatedPostsSidebar: React.FC<{ currentSlug: string }> = ({
+  currentSlug,
+}) => {
+  const relatedPosts = blogDetailData
+    .filter((post) => post.slug !== currentSlug)
+    .slice(0, 3);
 
-    return (
-        <div className="blog-sidebar">
+  return (
+    <div className="blog-sidebar">
+      <div className="sidebar-block related-posts-block">
+        <h3 className="sidebar-title">Bài Viết Liên Quan</h3>
+        <ul className="related-list">
+          {relatedPosts.map((post) => (
+            <li key={post.id}>
+              <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-            <div className="sidebar-block related-posts-block">
-                <h3 className="sidebar-title">Bài Viết Liên Quan</h3>
-                <ul className="related-list">
-                    {relatedPosts.map(post => (
-                        <li key={post.id}>
-                            <Link to={`/blog/${post.slug}`}>{post.title}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            <div className="sidebar-block cta-block">
-                <h3 className="sidebar-title cta-title">Cần tư vấn An Ninh?</h3>
-                <p>Liên hệ ngay để nhận báo giá chi tiết và tư vấn giải pháp tối ưu.</p>
-                <a href="tel:0909773302" className="btn-cta-sidebar">0909.7733.02</a>
-            </div>
-        </div>
-    );
+      <div className="sidebar-block cta-block">
+        <h3 className="sidebar-title cta-title">Cần tư vấn An Ninh?</h3>
+        <p>Liên hệ ngay để nhận báo giá chi tiết và tư vấn giải pháp tối ưu.</p>
+        <a href="tel:0909773302" className="btn-cta-sidebar">
+          0909.7733.02
+        </a>
+      </div>
+    </div>
+  );
 };
-
 
 const BlogDetail: React.FC = () => {
-    const { slug } = useParams<{ slug: string }>();
-    const post = useMemo(() => getPostBySlug(slug), [slug]);
+  const { slug } = useParams<{ slug: string }>();
+  const post = useMemo(() => getPostBySlug(slug), [slug]);
 
-    if (!post) {
-        return (
-            <div className="blog-detail-page not-found">
-                <div className="container" style={{ textAlign: 'center', padding: '100px 0' }}>
-                    <h1>404 - KHÔNG TÌM THẤY BÀI VIẾT</h1>
-                    <p>Bài viết bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
-                    <Link to="/blog" className="btn-back-to-blog">Quay lại trang Cẩm Nang</Link>
-                </div>
-            </div>
-        );
-    }
-
+  if (!post) {
     return (
-        <div className="blog-detail-page">
-            <div className="container">
-
-                <div className="detail-grid">
-                    <div className="detail-content">
-                        <span className="post-category-tag">{post!.category}</span>
-                        <h1 className="post-title-detail">{post!.title}</h1>
-                        <div className="post-meta-detail">
-                            <span>Ngày đăng: {post!.date}</span>
-                            <span>Tác giả: An Ninh City</span>
-                        </div>
-
-                        <img src={post!.image} alt={post!.title} className="featured-image-detail" />
-                        <div
-                            className="post-body"
-                            dangerouslySetInnerHTML={{ __html: post!.fullContent }}
-                        />
-
-                        <div className="share-section">
-                            <span className="share-text">Chia sẻ bài viết:</span>
-                            <button className="share-button facebook">Facebook</button>
-                            <button className="share-button zalo">Zalo</button>
-                        </div>
-                    </div>
-                    <RelatedPostsSidebar currentSlug={slug || ''} />
-
-                </div>
-            </div>
+      <div className="blog-detail-page not-found">
+        <div
+          className="container"
+          style={{ textAlign: 'center', padding: '100px 0' }}
+        >
+          <h1>404 - KHÔNG TÌM THẤY BÀI VIẾT</h1>
+          <p>Bài viết bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+          <Link to="/blog" className="btn-back-to-blog">
+            Quay lại trang Cẩm Nang
+          </Link>
         </div>
+      </div>
     );
+  }
+
+  return (
+    <div className="blog-detail-page">
+      <div className="container">
+        <div className="detail-grid">
+          <div className="detail-content">
+            <span className="post-category-tag">{post!.category}</span>
+            <h1 className="post-title-detail">{post!.title}</h1>
+            <div className="post-meta-detail">
+              <span>Ngày đăng: {post!.date}</span>
+              <span>Tác giả: An Ninh City</span>
+            </div>
+
+            <img
+              src={post!.image}
+              alt={post!.title}
+              className="featured-image-detail"
+            />
+            <div
+              className="post-body"
+              dangerouslySetInnerHTML={{ __html: post!.fullContent }}
+            />
+
+            <div className="share-section">
+              <span className="share-text">Chia sẻ bài viết:</span>
+              <button className="share-button facebook">Facebook</button>
+              <button className="share-button zalo">Zalo</button>
+            </div>
+          </div>
+          <RelatedPostsSidebar currentSlug={slug || ''} />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default BlogDetail;
