@@ -1,13 +1,13 @@
 // src/components/Header.tsx
 
 import React, { useState, useEffect } from 'react';
-import './Header.css'; 
+import './Header.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const HOTLINE = '0909.7733.02';
-  const DESKTOP_BREAKPOINT = 1200; 
+  const DESKTOP_BREAKPOINT = 1200;
 
   const navItems = [
     { name: 'Trang chủ', href: '/' },
@@ -26,20 +26,23 @@ const Header = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isOpen]); 
+  }, [isOpen]);
 
   return (
     <header className="main-header">
       <div className="header-container">
         <a href="/" className="logo-link">
-          <img 
-            src="/favicon.png" 
-            alt="Anninh City Logo" 
-            className="site-logo" 
+          <img
+            src="/favicon.png"
+            alt="Anninh City Logo"
+            className="site-logo"
           />
         </a>
-        <a href={`tel:${HOTLINE}`} className="hotline-button mobile-hotline-visible">
-           {HOTLINE}
+        <a
+          href={`tel:${HOTLINE}`}
+          className="hotline-button mobile-hotline-visible"
+        >
+          {HOTLINE}
         </a>
         <nav className="nav-menu desktop-menu">
           {navItems.map((item) => (
@@ -49,7 +52,10 @@ const Header = () => {
           ))}
         </nav>
         <div className="header-actions">
-          <a href={`tel:${HOTLINE}`} className="hotline-button desktop-hotline-only">
+          <a
+            href={`tel:${HOTLINE}`}
+            className="hotline-button desktop-hotline-only"
+          >
             {HOTLINE}
           </a>
           <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
@@ -62,7 +68,12 @@ const Header = () => {
       {isOpen && (
         <nav className="nav-menu mobile-menu">
           {navItems.map((item) => (
-            <Link key={item.name} to={item.href} className="nav-item-mobile" onClick={() => setIsOpen(false)}>
+            <Link
+              key={item.name}
+              to={item.href}
+              className="nav-item-mobile"
+              onClick={() => setIsOpen(false)}
+            >
               {item.name}
             </Link>
           ))}
