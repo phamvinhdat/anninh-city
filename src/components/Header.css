@@ -21,11 +21,13 @@
   object-fit: contain;
 }
 
+.logo-text {
+  display: none;
+}
+
 .desktop-menu {
   display: flex;
   gap: 80px;
-  flex-grow: 1;
-  justify-content: center;
 }
 
 .nav-item {
@@ -64,11 +66,11 @@
   color: #fff;
 }
 
-.mobile-hotline-visible {
-  display: none;
+.cta-button {
+  display: none !important;
 }
-.desktop-hotline-only {
-  display: block;
+.hotline-contact {
+  display: none !important;
 }
 
 .menu-toggle {
@@ -87,6 +89,7 @@
   margin: 4px 0;
   transition: 0.4s;
 }
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -98,61 +101,40 @@
 }
 
 .nav-item-mobile {
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #333;
   display: block;
   border-bottom: 1px solid #eee;
-  font-weight: bold;
 }
 
-@media (max-width: 1200px) {
+.hotline-button-mobile {
+  margin: 10px 20px;
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
   .desktop-menu,
-  .desktop-hotline-only {
-    display: none !important;
+  .hotline-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .header-container {
-    padding: 5px 10px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .site-logo {
-    height: 50px;
-    flex-shrink: 0;
-  }
-  .mobile-hotline-visible {
-    display: block;
-    padding: 8px 12px;
-    font-size: 14px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    white-space: nowrap;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: block;
-    flex-shrink: 0;
-  }
-
-  .header-actions {
-    display: flex;
-    flex-shrink: 0;
-    gap: 0;
+    padding: 10px 20px;
   }
 }
-
-@media (min-width: 1201px) {
-  .mobile-hotline-visible,
-  .menu-toggle {
-    display: none !important;
-  }
-  .hotline-button.desktop-hotline-only {
-    display: block;
+@media (min-width: 901px) {
+  .mobile-menu {
+    display: none;
   }
 }
