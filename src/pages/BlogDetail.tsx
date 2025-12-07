@@ -1,12 +1,10 @@
-// src/pages/BlogDetail.tsx
-
 import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import './BlogDetail.css'; 
+import './BlogDetail.css';
 const blogDetailData = [
-    { 
-        id: 1, 
-        title: "Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024", 
+    {
+        id: 1,
+        title: "Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024",
         slug: "tuyen-dung-bao-ve-an-ninh-hcm",
         category: "Tin Tức",
         date: "20-11-2025",
@@ -80,9 +78,9 @@ const blogDetailData = [
             <p><strong>Cơ hội của bạn đang ở đây!</strong> Hãy nộp hồ sơ ngay để không bỏ lỡ cơ hội làm việc tại An Ninh City, nơi sự chuyên nghiệp và cơ hội thăng tiến luôn song hành cùng bạn. Vui lòng liên hệ trực tiếp phòng Nhân sự của An Ninh City qua số điện thoại <strong>0909.7733.02</strong> hoặc nộp hồ sơ trực tiếp tại văn phòng công ty trong giờ hành chính.</p>
         `
     },
-    { 
-        id: 2, 
-        title: "5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam", 
+    {
+        id: 2,
+        title: "5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam",
         slug: "bi-quyet-chon-cong-ty-bao-ve",
         category: "Cẩm Nang",
         date: "15-11-2025",
@@ -133,9 +131,9 @@ const blogDetailData = [
             <p>Việc áp dụng 5 bí quyết trên sẽ giúp doanh nghiệp của bạn chọn được đối tác bảo vệ không chỉ đáng tin cậy mà còn có năng lực vượt trội, đảm bảo môi trường kinh doanh an toàn tuyệt đối.</p>
         `
     },
-    { 
-        id: 3, 
-        title: "Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO", 
+    {
+        id: 3,
+        title: "Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO",
         slug: "quy-trinh-an-ninh-icao",
         category: "Cẩm Nang",
         date: "10-11-2025",
@@ -234,11 +232,11 @@ const getPostBySlug = (slug: string | undefined) => {
 const RelatedPostsSidebar: React.FC<{ currentSlug: string }> = ({ currentSlug }) => {
     const relatedPosts = blogDetailData
         .filter(post => post.slug !== currentSlug)
-        .slice(0, 3); 
+        .slice(0, 3);
 
     return (
         <div className="blog-sidebar">
-            
+
             <div className="sidebar-block related-posts-block">
                 <h3 className="sidebar-title">Bài Viết Liên Quan</h3>
                 <ul className="related-list">
@@ -249,8 +247,8 @@ const RelatedPostsSidebar: React.FC<{ currentSlug: string }> = ({ currentSlug })
                     ))}
                 </ul>
             </div>
-            
-             <div className="sidebar-block cta-block">
+
+            <div className="sidebar-block cta-block">
                 <h3 className="sidebar-title cta-title">Cần tư vấn An Ninh?</h3>
                 <p>Liên hệ ngay để nhận báo giá chi tiết và tư vấn giải pháp tối ưu.</p>
                 <a href="tel:0909773302" className="btn-cta-sidebar">0909.7733.02</a>
@@ -261,7 +259,7 @@ const RelatedPostsSidebar: React.FC<{ currentSlug: string }> = ({ currentSlug })
 
 
 const BlogDetail: React.FC = () => {
-    const { slug } = useParams<{ slug: string }>(); 
+    const { slug } = useParams<{ slug: string }>();
     const post = useMemo(() => getPostBySlug(slug), [slug]);
 
     if (!post) {
@@ -279,7 +277,7 @@ const BlogDetail: React.FC = () => {
     return (
         <div className="blog-detail-page">
             <div className="container">
-                
+
                 <div className="detail-grid">
                     <div className="detail-content">
                         <span className="post-category-tag">{post!.category}</span>
@@ -288,13 +286,13 @@ const BlogDetail: React.FC = () => {
                             <span>Ngày đăng: {post!.date}</span>
                             <span>Tác giả: An Ninh City</span>
                         </div>
-                        
+
                         <img src={post!.image} alt={post!.title} className="featured-image-detail" />
-                        <div 
+                        <div
                             className="post-body"
                             dangerouslySetInnerHTML={{ __html: post!.fullContent }}
                         />
-                        
+
                         <div className="share-section">
                             <span className="share-text">Chia sẻ bài viết:</span>
                             <button className="share-button facebook">Facebook</button>
@@ -302,7 +300,7 @@ const BlogDetail: React.FC = () => {
                         </div>
                     </div>
                     <RelatedPostsSidebar currentSlug={slug || ''} />
-                    
+
                 </div>
             </div>
         </div>

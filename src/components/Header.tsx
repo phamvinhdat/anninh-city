@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Header.css'; 
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +43,9 @@ const Header = () => {
         </a>
         <nav className="nav-menu desktop-menu">
           {navItems.map((item) => (
-            <a key={item.name} href={item.href} className="nav-item">
+            <Link key={item.name} to={item.href} className="nav-item">
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="header-actions">
@@ -61,9 +62,9 @@ const Header = () => {
       {isOpen && (
         <nav className="nav-menu mobile-menu">
           {navItems.map((item) => (
-            <a key={item.name} href={item.href} className="nav-item-mobile" onClick={() => setIsOpen(false)}>
+            <Link key={item.name} to={item.href} className="nav-item-mobile" onClick={() => setIsOpen(false)}>
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
       )}
