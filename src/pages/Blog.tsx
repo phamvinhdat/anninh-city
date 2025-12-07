@@ -9,55 +9,55 @@ const blogData = [
         id: 1, 
         title: "Tuyển dụng bảo vệ an ninh TPHCM: Cơ hội việc làm hấp dẫn 2024", 
         summary: "Thông báo tuyển dụng lớn cho vị trí nhân viên bảo vệ chuyên nghiệp tại khu vực TP.HCM. Mức lương hấp dẫn, chế độ đãi ngộ tốt, và cơ hội thăng tiến rõ ràng.", 
-        image: PLACEHOLDER_IMAGE, 
+        image: "/images/TT1.png",
         slug: "tuyen-dung-bao-ve-an-ninh-hcm",
         category: "Tin Tức",
-        date: "2020-11-20"
+        date: "20-11-2025"
     },
     { 
         id: 2, 
         title: "5 Bí quyết lựa chọn công ty bảo vệ uy tín tại Việt Nam", 
         summary: "Cẩm nang giúp doanh nghiệp đánh giá và chọn được đối tác an ninh chuyên nghiệp, đảm bảo an toàn tuyệt đối cho tài sản và con người.", 
-        image: PLACEHOLDER_IMAGE, 
+        image: "/images/TT2.png",
         slug: "bi-quyet-chon-cong-ty-bao-ve",
         category: "Cẩm Nang",
-        date: "2020-11-15"
+        date: "15-11-2025"
     },
     { 
         id: 3, 
         title: "Quy trình kiểm soát an ninh hàng không chuẩn quốc tế ICAO", 
         summary: "Phân tích chi tiết các bước kiểm soát an ninh tại sân bay, từ soi chiếu hành lý đến giám sát khu vực cấm, theo tiêu chuẩn quốc tế ICAO.", 
-        image: PLACEHOLDER_IMAGE, 
+        image: "/images/TT3.png",
         slug: "quy-trinh-an-ninh-icao",
         category: "Cẩm Nang",
-        date: "2020-11-10"
+        date: "10-11-2025"
+    },
+    { 
+        id: 4, 
+        title: "Trách nhiệm pháp lý của công ty bảo vệ và chủ đầu tư", 
+        summary: "Phân tích rõ ràng về quyền lợi và trách nhiệm pháp lý của cả hai bên khi ký kết hợp đồng dịch vụ bảo vệ chuyên nghiệp.", 
+        image: "/images/TT4.png",
+        slug: "trach-nhiem-phap-ly",
+        category: "Cẩm Nang",
+        date: "25-10-2025"
     },
     { 
         id: 5, 
-        title: "Trách nhiệm pháp lý của công ty bảo vệ và chủ đầu tư", 
-        summary: "Phân tích rõ ràng về quyền lợi và trách nhiệm pháp lý của cả hai bên khi ký kết hợp đồng dịch vụ bảo vệ chuyên nghiệp.", 
-        image: PLACEHOLDER_IMAGE, 
-        slug: "trach-nhiem-phap-ly",
-        category: "Cẩm Nang",
-        date: "2020-10-25"
+        title: "Gặp gỡ khách hàng tiêu biểu: Công ty Xây dựng Tầm Cao Mới", 
+        summary: "Phỏng vấn và chia sẻ kinh nghiệm hợp tác với một trong những khách hàng lớn của An Ninh City trong lĩnh vực xây dựng.", 
+        image: "/images/TT5.png",
+        slug: "khach-hang-xay-dung",
+        category: "Khách Hàng",
+        date: "20-10-2025"
     },
     { 
         id: 6, 
-        title: "Gặp gỡ khách hàng tiêu biểu: Công ty Xây dựng Tầm Cao Mới", 
-        summary: "Phỏng vấn và chia sẻ kinh nghiệm hợp tác với một trong những khách hàng lớn của An Ninh City trong lĩnh vực xây dựng.", 
-        image: PLACEHOLDER_IMAGE, 
-        slug: "khach-hang-xay-dung",
-        category: "Khách Hàng",
-        date: "2020-10-20"
-    },
-    { 
-        id: 7, 
         title: "Kỹ năng sơ cứu cơ bản cho nhân viên bảo vệ tại trường học", 
         summary: "Hướng dẫn chi tiết các bước sơ cứu ban đầu, là kỹ năng bắt buộc đối với lực lượng bảo vệ tại môi trường giáo dục.", 
-        image: PLACEHOLDER_IMAGE, 
+        image: "/images/TT5.png",
         slug: "so-cuu-cho-bao-ve-truong-hoc",
         category: "Cẩm Nang",
-        date: "2020-10-10"
+        date: "10-10-2025"
     },
 ];
 
