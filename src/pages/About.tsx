@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const whyChooseUsNew = [
   {
@@ -75,9 +76,9 @@ const About: React.FC = () => {
               <a href="tel:0909773302" className="cta-primary-blue">
                 Gọi Ngay
               </a>
-              <a href="/contact" className="cta-secondary-outline">
+              <Link to="/contact" className="cta-secondary-outline">
                 Liên Hệ
-              </a>
+              </Link>
             </div>
           </div>
         </div>

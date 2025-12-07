@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutDetail.css';
+import { Link } from 'react-router-dom';
 
 const features = [
   'Đội ngũ nhân viên được đào tạo theo tiêu chuẩn quốc tế.',
@@ -34,9 +35,9 @@ const AboutDetail: React.FC = () => {
             ))}
           </ul>
 
-          <a href="/about" className="learn-more-button">
+          <Link to="/about" className="learn-more-button">
             Khám phá thêm về Anninh City
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -46,9 +47,9 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="view-more-container">
-          <a href="/projects" className="view-more-button">
+          <Link to="/projects" className="view-more-button">
             Xem Thêm Tất Cả Dự Án
-          </a>
+          </Link>
         </div>
       </div>
     </section>
